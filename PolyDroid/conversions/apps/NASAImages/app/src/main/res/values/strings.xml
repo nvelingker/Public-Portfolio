@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">NASA Images</string>
+    <string name="current_image_content_description">Current Image</string>
+    <string name="download_image">Download image</string>
+    <string name="show_image_info">Show image info</string>
+    <string name="share_image">Share image</string>
+    <string name="dialog_description"><b>DESCRIPTION:</b></string>
+    <string name="dialog_center"><b>CENTER:</b></string>
+    <string name="dialog_date_created"><b>DATE CREATED:</b></string>
+    <string name="dialog_nasa_id"><b>NASA ID:</b></string>
+    <string name="placeholder_description">-</string>
+    <string name="placeholder_date_created">-</string>
+    <string name="placeholder_center">-</string>
+    <string name="placeholder_nasa_id">-</string>
+    <string name="error_share">The image couldn\'t be shared</string>
+    <string name="error_downloading">The image couldn\'t be downloaded</string>
+    <string name="explanation_permission_storage">The app needs permission to download the image to your phone.</string>
+    <string name="explanation_permission_storage_short">The app has no permission to perform this action :(</string>
+    <string name="success_download">The image was downloaded successfully!</string>
+    <string name="image_already_downloaded">This image has already been downloaded</string>
+    <string name="about">About</string>
+    <string name="about_body">
+        <![CDATA[
+            NASA Images, 2017. <br/>
+            Developed by <a href=\'https://gitlab.com/atorresm\'><b>atorresm</b></a>.<br/>
+            Licensed under GPL3. <br/>
+            <a href=\'https://gitlab.com/atorresm/NASAImages\'>Source code and issue tracker</a>.<br/>
+            Media from <a href=\'https://images.nasa.gov/\'>NASA Image and Video Library</a>.<br/>
+            Icons by <a href=\'https://github.com/google/material-design-icons/\'>Google</a> and
+            <a href=\'http://www.flaticon.com/authors/freepik\'>Freepik</a>.
+        ]]>
+    </string>
+    <string name="error_loading_image">The image couldn\'t be loaded. Maybe you don\'t have internet connection?</string>
+    <string name="set_wallpaper">Set wallpaper</string>
+</resources>
