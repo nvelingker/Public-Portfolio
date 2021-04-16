@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <!-- Setting Title -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playback"
+        android:paddingBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Shuffle -->
+    <CheckBox
+        android:id="@+id/shuffleCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/shuffle" />
+    
+    <!-- Library Title -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp"
+        android:text="@string/library"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+		<!-- Rescan Button -->
+        <ImageView
+            android:id="@+id/rescan"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/fs_scan_start48"
+            android:contentDescription="@string/sync_library"
+            android:gravity="center_vertical"
+            android:paddingRight="10sp" />
+
+        <!-- Path String -->
+        <TextView
+                android:id="@+id/mediaDir"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/default_path"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="start"/>
+
+        <!-- Edit Path Button -->
+        <ImageView
+                android:id="@+id/chooseMediaDir"
+                android:layout_width="35dp"
+                android:layout_height="fill_parent"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="@string/edit_dir"
+                android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/rescanProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+    <LinearLayout
+        android:id="@+id/rescanState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        
+        <!-- Rescanning Pause Button -->
+        <ImageView
+            android:id="@+id/togglePause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fs_scan_pause48"
+            android:contentDescription="@string/sync_library"
+            android:gravity="center_vertical"
+            android:paddingRight="10sp" />
+        
+        <!-- Rescanning Track Name -->
+        <TextView
+                android:id="@+id/rescanProgressBarIndicatorTrack"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="start"
+                android:gravity="center_vertical"
+                android:text="@string/trackInitialValue"
+                android:paddingRight="20dp" />
+        
+        <!-- Tracks Completed -->
+        <TextView
+                android:id="@+id/rescanProgressBarIndicatorState"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/zero" />
+        
+        <!-- Sepeator -->
+        <TextView
+                android:id="@+id/rescanProgressBarIndicatorDelitmiter"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/trackPostionSeparator" />
+        
+        <!-- Total Number of Tracks -->
+        <TextView
+                android:id="@+id/rescanProgressBarIndicatorAll"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/zero" />
+        
+    </LinearLayout>
+
+	<!-- About Information -->
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_desc"
+        android:paddingTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</LinearLayout>

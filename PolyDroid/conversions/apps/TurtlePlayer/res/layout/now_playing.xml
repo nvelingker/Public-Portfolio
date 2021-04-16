@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutNow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout_curr_playing"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1">
+
+            <RelativeLayout
+                    android:id="@+id/relativeLayout_albumArt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <include
+                        android:id="@+id/albumArt"
+                        layout="@layout/album_art"/>
+
+                <include
+                        android:id="@+id/albumArtRight"
+                        layout="@layout/album_art"
+                        android:visibility="invisible" />
+
+                <include
+                        android:id="@+id/albumArtLeft"
+                        layout="@layout/album_art"
+                        android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/trackDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/durationInitialValue"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                    android:id="@+id/trackPostionSeparator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/trackDuration"
+                    android:layout_alignBaseline="@id/trackDuration"
+                    android:text="@string/trackPostionSeparator"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <TextView
+                    android:id="@+id/trackCurrPostion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/trackPostionSeparator"
+                    android:layout_alignBaseline="@id/trackDuration"
+                    android:text="@string/currPositionInitialValue"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <include
+                    android:id="@+id/menuBows"
+                    layout="@layout/bow_menu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout_now_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="-5dp">
+
+            <RelativeLayout
+                android:background="@drawable/header_bg100"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                        android:id="@+id/playButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="2dp"
+                        android:contentDescription="@string/play"
+                        android:src="@drawable/play96" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true">
+                    <ImageView
+                            android:id="@+id/separator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/separator"
+                            android:scaleType="fitXY"/>
+                    <ImageView
+                            android:id="@+id/backButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/back"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="12dp"
+                            android:src="@drawable/back48" />
+
+                    <ImageView
+                            android:id="@+id/shuffleButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/playButton"
+                            android:contentDescription="@string/back"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp"
+                            android:src="@drawable/dice48" />
+
+                    <ImageView
+                            android:id="@+id/nextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/next"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="18dp"
+                            android:src="@drawable/next48" />
+                </LinearLayout>
+            </RelativeLayout>
+            <SeekBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/progress_bar_full"
+                    android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+
+</LinearLayout>
