@@ -26,7 +26,7 @@ public class PushNotification {
     public static final int ICON_CHECK = 1;
     
     // KolbLibrary's unique GCM API key to send notifications to devices.
-    public static final String API_KEY = "AIzaSyDSOc7_AE4VsyzWNnUNxZNwb_RdfTCviG0";
+    public static final String API_KEY = "";
     
     // Content of the PushNotification
     private final String title, body;
