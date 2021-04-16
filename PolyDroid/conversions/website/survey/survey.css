@@ -1,0 +1,67 @@
+
+#collapseTrigger {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size:30px
+}
+
+#submitButton {
+  white-space: normal;
+}
+
+.radcols{
+  
+  width: 11% !important;
+}
+
+.rbutt{
+  
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.imageContainer {
+  display: block;
+  text-align: center;
+}
+
+.radiocontainer{
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  vertical-align: middle;
+  align-items:center;
+  text-align: center;
+}
+
+.embed-container {
+  position: relative;
+  padding-top: 100%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+.cat-exp {
+  align-items: center;
+  
+}
