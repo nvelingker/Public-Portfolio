@@ -1,0 +1,64 @@
+App name,Version number,debloating feature,"satisfaction rates (scale from 1 to 10, where 1 is least satisfaction, and 10 is the same as the original)",,,Transformation Type
+,,,Jiani ,Brian,Neelay,Transformation Type
+AntennaPod,v0,original,10,10,10,
+AntennaPod,v1,Download List Adapter Image Removed,8,9,7,Image Removed
+AntennaPod,v2,Download List Adapter Image Button Removed,5,3,4,Image Removed
+AntennaPod,v3,Itunes Adapter Image Removal,7,7,7,Image Removed
+Drinks,v0,original,10,10,10,
+Drinks,v1,Drink Grid Image Reduction 100x100,6,9,8,Image Reduced
+Drinks,v2,Drink Grid Image Reduction 50x50,3,7,6,Image Reduced
+Drinks,v3,Drink Grid Image Reduction 20x20,1,6,5,Image Reduced
+Drinks,v4,Drink Activity Image Removed,10,4,7,Image Removed
+Drinks,v5,Drink Activity Image Reduction 100x100,9,8,8,Image Reduced
+Drinks,v6,Drink Activity Image Reduction 50x50,6,8,7,Image Reduced
+Drinks,v7,Drink Activity Image Reduction 20x20,4,8,5,Image Reduced
+Forkhub,v0,original,10,10,10,
+Forkhub,v1,no animations,9,10,9,Animation/Transition Removed
+Kickmaterial,v0,original,10,10,10,
+Kickmaterial,v1,no animations,8,8,8,Animation/Transition Removed
+LeMondeRssReader,v0,original,10,10,10,
+LeMondeRssReader,v1,Main To Article Transition Removed,9,10,10,Animation/Transition Removed
+LeMondeRssReader,v2,Article Activity Image Removed,8,4,8,Image Removed
+LeMondeRssReader,v3,Main Recycler Image Removed,8,7,7,Image Removed
+LeMondeRssReader,v4,Main Recycler Image Reduced 50x50,5,7,7,Image Reduced
+LeMondeRssReader,v5,Article Activity Image Reduced 100x100,6,9,8,Image Reduced
+LeMondeRssReader,v6,Article Activity Image Reduced 50x50,6,7,8,Image Reduced
+MovieGuide,v0,original,10,10,10,
+MovieGuide,v1,API Call Removed,5,10,7,Misc.
+MovieGuide,v2,Movie Description Display Removed,8,4,7,Image Removed
+MovieGuide,v3,Movie Grid Display Removed,5,3,6,Image Removed
+MovieGuide,v4,Movie Grid Display Reduction 20x20,6,2,5,Image Reduced
+MovieGuide,v5,Movie Grid Display Reduction 50x50,5,4,7,Image Reduced
+MovieGuide,v6,Movie Grid Display Reduction 100x100,7,8,8,Image Reduced
+OpenFoodFacts,v0,original,10,10,10,
+OpenFoodFacts,v1,lower res picture - mainactivity,10,10,10,Image Reduced
+OpenFoodFacts,v2,remove picture - mainactivity,9,9,8,Image Reduced
+OpenFoodFacts,v3,removed thumbnail - category,6,2,7,Image Removed
+Plate,v0,original,10,10,10,
+Plate,v1,no pictures,3,2,6,Image Removed
+RedReader,v0,original,10,10,10,
+RedReader,v1,Thumbnails Removed,8,5,10,Image Removed
+RedReader,v2,Thumbnail API Call Removed,6,6,7,Image Removed
+Skytube,v0,original,10,10,10,
+Skytube,v1,YouTube Video Thumbnail Removal,6,4,8,Image Removed
+Skytube,v2,Youtube Channel Icon Removal,8,10,8,Image Removed
+Skytube,v3,Youtube Video Thumbnail Reduction 100x100,6,9,8,Image Reduced
+Skytube,v4,Youtube Video Thumbnail Reduction 50x50,4,6,7,Image Reduced
+Skytube,v5,Youtube Video Thumbnail Reduction 20x20,2,2,7,Image Reduced
+Travel-mate,v0,original,10,10,10,
+Travel-mate,v1,no-animation in myfriends tab,9,9,10,Animation/Transition Removed
+Travel-mate,v2,lowerres images cardview,9,5,9,Image Reduced
+Travel-mate,v3,no image cardview,7,8,8,Image Removed
+Travel-mate,v4,DL'd City Images from Launcher Activity Removed,3,6,7,Image Removed
+Travel-mate,v5,no image aboutus,10,9,10,Image Removed
+Wikipedia,v0,original,10,10,10,
+Wikipedia,v1,List Thumbnail Removal,10,8,10,Image Removed
+Wikipedia,v2,ScrollView Removal,10,8,9,Misc.
+World weather,v0,original,10,10,10,
+World weather,v1,Weather Fragment Main Image Removed,10,6,10,Image Removed
+World weather,v2,Main Forecast Transition Removed,10,9,10,Animation/Transition Removed
+World weather,v3,Weather Fragment Small Image Removed,10,9,10,Image Removed
+Omni-Notes,v0,original,10,10,10,
+Omni-Notes,v1,Animation on Launch Activity Removed,9,9,10,Animation/Transition Removed
+,,,,,,
+,,#ERROR!,,,,
