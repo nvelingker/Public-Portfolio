@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: be.billington.calendar.recurrencepicker:library-1.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.1.1.aar/769025231e49b85b63fa53dacd54ccd6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.1.1.aar/769025231e49b85b63fa53dacd54ccd6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/be.billington.calendar.recurrencepicker/library/1.1.1/dde13e9092d3b4b6c85daaba5618996d51c85947/library-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

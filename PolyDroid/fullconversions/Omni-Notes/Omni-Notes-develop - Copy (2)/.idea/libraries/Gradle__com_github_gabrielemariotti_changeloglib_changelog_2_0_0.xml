@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.gabrielemariotti.changeloglib:changelog-2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/changelog-2.0.0.aar/5543616c4e6952d4ba0443d954ced4a9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/changelog-2.0.0.aar/5543616c4e6952d4ba0443d954ced4a9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gabrielemariotti.changeloglib/changelog/2.0.0/b273b9ac7ecc4624365f1a320381d254b573c8d8/changelog-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

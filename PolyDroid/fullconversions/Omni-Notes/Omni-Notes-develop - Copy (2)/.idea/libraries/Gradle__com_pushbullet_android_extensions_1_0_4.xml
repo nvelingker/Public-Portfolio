@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pushbullet:android-extensions-1.0.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-extensions-1.0.4.aar/a14eb15d2c86d070602d79a546df1db9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-extensions-1.0.4.aar/a14eb15d2c86d070602d79a546df1db9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pushbullet/android-extensions/1.0.4/39672457cd15153b6e277ac201d0b2eac2c6f4fb/android-extensions-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
