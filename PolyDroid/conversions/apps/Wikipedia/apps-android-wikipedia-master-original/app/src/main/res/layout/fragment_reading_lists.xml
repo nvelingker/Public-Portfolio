@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reading_list_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reading_list_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/reading_list_onboarding_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reading_list_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/empty_title"
+                    style="@style/MaterialLargePrimaryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/saved_list_empty_title" />
+
+                <ImageView
+                    android:id="@+id/empty_image"
+                    android:layout_width="168dp"
+                    android:layout_height="168dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/no_lists" />
+
+                <TextView
+                    android:id="@+id/empty_message"
+                    style="@style/MaterialMediumSecondaryCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/reading_lists_empty_message" />
+            </LinearLayout>
+        </ScrollView>
+
+        <org.wikipedia.views.SearchEmptyView
+            android:id="@+id/search_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
