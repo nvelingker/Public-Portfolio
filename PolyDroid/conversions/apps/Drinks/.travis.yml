@@ -1,0 +1,24 @@
+language: android
+
+jdk:
+  - oraclejdk8
+
+android:
+    components:
+      - tools
+      - platform-tools
+      - build-tools-25.0.2
+      - android-25
+      - extra-android-support
+      - extra-android-m2repository
+      - extra-google-google_play_services
+      - extra-google-m2repository
+    licenses:
+      - android-sdk-license-.+
+
+script:
+  - ./gradlew build
+
+after_script:
+  - cat app/build/outputs/lint-*debug.xml
+  - cat app/build/reports/checkstyle/*.xml

@@ -1,0 +1,9 @@
+.gradle
+*.keystore
+/local.properties
+.idea
+*.iml
+.DS_Store
+/build
+/captures
+app/src/firebase/res/values/firebase.xml

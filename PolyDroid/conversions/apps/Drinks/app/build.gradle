@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion sdkVersion
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId 'fr.masciulli.drinks'
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion sdkVersion
+        versionCode 32
+        versionName '2.0.8'
+
+        buildConfigField "String", "SERVER_URL", "\"http://drinks-api.appspot.com\""
+    }
+
+    flavorDimensions "analytics"
+    productFlavors {
+        vanilla {
+            dimension "analytics"
+        }
+        firebase {
+            dimension "analytics"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        lintConfig file('../gradle/lint.xml')
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
+    testCompile "com.android.support:support-annotations:$supportLibraryVersion"
+
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
+    compile 'com.jakewharton.timber:timber:4.5.1'
+
+    firebaseCompile 'com.google.firebase:firebase-core:11.4.2'
+    firebaseCompile 'com.google.firebase:firebase-crash:11.4.2'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.10.0'
+    testCompile 'com.squareup.assertj:assertj-android:1.1.1'
+    compile project(path: ':core')
+}
+
+apply from: "$project.rootDir/config/android-checkstyle.gradle"
+apply from: "$project.rootDir/config/ktlint.gradle"
