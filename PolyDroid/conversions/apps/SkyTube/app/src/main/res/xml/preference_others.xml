@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SkyTube
+  ~ Copyright (C) 2017  Ramon Mifsud
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation (version 3 of the License).
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ListPreference
+		android:key="@string/pref_key_default_tab"
+		android:title="@string/pref_title_default_tab"
+		android:entries="@array/default_tab"
+		android:entryValues="@array/default_tab_values" />
+
+	<EditTextPreference
+		android:key="@string/pref_youtube_api_key"
+		android:title="@string/pref_title_youtube_api_key"
+		android:summary="@string/pref_summary_youtube_api_key"
+		android:dialogTitle="@string/pref_title_youtube_api_key" />
+
+	<!--<ListPreference-->
+		<!--android:key="@string/pref_feed_notification_key"-->
+		<!--android:title="@string/pref_title_feed_notification"-->
+		<!--android:entries="@array/feed_notification"-->
+		<!--android:entryValues="@array/feed_notification_values" />-->
+
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="@string/pref_key_subscriptions_alphabetical_order"
+		android:title="@string/pref_title_subscriptions_alphabetical_order"
+		android:summary="@string/pref_summary_subscriptions_alphabetical_order"/>
+
+
+	<PreferenceCategory
+		android:title="@string/pref_category_downloads">
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="@string/pref_key_allow_mobile_downloads"
+			android:title="@string/pref_title_allow_mobile_downloads"
+			android:summary="@string/pref_summary_allow_mobile_downloads"/>
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="pref_download_to_separate_directories"
+			android:title="@string/pref_title_download_to_separate_directories"
+			android:summary="@string/pref_summary_download_to_separate_directories"/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

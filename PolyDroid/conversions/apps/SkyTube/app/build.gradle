@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.0'
+
+    defaultConfig {
+        applicationId "free.rm.skytube"
+        minSdkVersion 14
+        targetSdkVersion 27
+
+        versionName "2.91"    // digits of the *fractional part* shall NOT be > than "9"
+        versionCode 15
+
+        // Third party devs:  pls be ethical and change the below keys
+        buildConfigField 'String',   'YOUTUBE_API_KEYS_DEBUG', '"AIzaSyDU-ZZCyOB_kYkiMSZ6ooSipUZRukHU4ik"'
+        buildConfigField 'String[]', 'YOUTUBE_API_KEYS',
+                '{' +
+                        '"AIzaSyC27jgPDHkQsQK8TW4ngrQprSCnlMTJ04w",' +
+                        '"AIzaSyCmXsaE6ZW14-1vM5zceWnGWnB73FkY7U4",' +
+                        '"AIzaSyBd3Loyy_XN2tPHPfc1E7EkSkdCqfzTHxg"'  +
+                '}'
+        buildConfigField 'String', 'SKYTUBE_WEBSITE',         '"http://skytube-app.com"'
+        buildConfigField 'String', 'SKYTUBE_WEBSITE_CREDITS', '"http://skytube-app.com/credits.html"'
+        buildConfigField 'String', 'SKYTUBE_UPDATES_URL', '"https://api.github.com/repos/ram-on/SkyTube/releases/latest"'
+        vectorDrawables.useSupportLibrary true
+        multiDexEnabled true    // as we have over 65536 lines of code...
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "skytube"
+    productFlavors {
+        // 100% Open-Source Edition
+        oss {
+            applicationId "free.rm.skytube.oss"
+            resValue "string", "app_name", "SkyTube"
+            dimension "skytube"
+        }
+        // 99% Open-source edition:  uses the YouTube Player Jar [i.e. proprietary module - optional usage]
+        extra {
+            applicationId "free.rm.skytube.extra"
+            resValue "string", "app_name", "SkyTube Extra"
+            dimension "skytube"
+        }
+    }
+    // Generate APK filenames as follows:  <App Name>-<Flavor><Version>
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "${parent.name}-${variant.productFlavors[0].name.capitalize()}-${variant.versionName}.apk"
+        }
+    }
+    // Ignore missing translations
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+
+    // YouTube modules
+    implementation 'com.google.http-client:google-http-client-android:1.23.0'
+    implementation 'com.google.apis:google-api-services-youtube:v3-rev187-1.23.0'
+    implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.14.1'
+
+    // other modules
+    implementation group: 'org.ocpsoft.prettytime', name: 'prettytime', version: '4.0.1.Final'
+    implementation 'com.github.moraisigor:slidingdrawer:1.6.7'
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation group: 'joda-time', name: 'joda-time', version: '2.9.9'
+    implementation 'com.afollestad.material-dialogs:core:0.9.5.0'
+    implementation 'com.github.angads25:filepicker:1.1.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.1'
+    implementation 'com.klinkerapps:link_builder:1.6.1'
+    implementation (group: 'com.optimaize.languagedetector', name: 'language-detector', version: '0.6') {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
+    implementation 'com.mikepenz:actionitembadge:3.3.2@aar'
+    implementation "com.mikepenz:iconics-core:3.0.3@aar"
+
+    // Android support modules
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3' // as we have over 65536 lines of code...
+
+    // proprietary module
+    extraImplementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
