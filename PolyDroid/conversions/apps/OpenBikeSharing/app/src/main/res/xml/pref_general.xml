@@ -1,0 +1,131 @@
+<!--
+  ~ Copyright (c) 2014-2015 Bruno Parmentier. This file is part of OpenBikeSharing.
+  ~
+  ~ OpenBikeSharing is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ OpenBikeSharing is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with OpenBikeSharing.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="network-id"
+        android:title="@string/pref_title_bike_networks_list">
+        <intent
+            android:targetClass="be.brunoparmentier.openbikesharing.app.activities.BikeNetworksListActivity"
+            android:targetPackage="be.brunoparmentier.openbikesharing.app" />
+    </Preference>
+
+    <be.brunoparmentier.openbikesharing.app.preferences.UpdateListPreference
+        android:defaultValue="mapnik"
+        android:dialogTitle="@string/pref_map_layer_title"
+        android:entries="@array/pref_map_layer_entries"
+        android:entryValues="@array/pref_map_layer_values"
+        android:key="pref_map_layer"
+        android:summary="%s"
+        android:title="@string/pref_map_layer_title" />
+
+    <be.brunoparmentier.openbikesharing.app.preferences.UpdateListPreference
+        android:defaultValue="0"
+        android:dialogTitle="@string/pref_title_default_tab"
+        android:entries="@array/pref_default_tab_entries"
+        android:entryValues="@array/pref_default_tab_values"
+        android:key="pref_default_tab"
+        android:summary="%s"
+        android:title="@string/pref_title_default_tab" />
+
+    <PreferenceScreen android:title="@string/pref_title_advanced">
+        <EditTextPreference
+            android:key="pref_api_url"
+            android:title="@string/pref_title_api_url"
+            android:defaultValue="http://api.citybik.es/v2/" />
+
+        <CheckBoxPreference
+            android:key="pref_strip_id_station"
+            android:summary="@string/pref_title_strip_station_id_summary"
+            android:title="@string/pref_title_strip_station_id" />
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/pref_title_about">
+        <Preference
+            android:key="pref_version"
+            android:title="@string/pref_title_version" />
+
+        <Preference
+            android:summary="http://openbikesharing.org"
+            android:title="@string/pref_title_website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://openbikesharing.org" />
+        </Preference>
+
+        <Preference
+            android:summary="https://github.com/bparmentier/OpenBikeSharing"
+            android:title="@string/pref_title_source_code">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/bparmentier/OpenBikeSharing" />
+        </Preference>
+
+        <Preference
+            android:summary="https://www.brunoparmentier.be"
+            android:title="@string/pref_title_developers_website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.brunoparmentier.be" />
+        </Preference>
+
+        <be.brunoparmentier.openbikesharing.app.preferences.InfoDialogPreference
+            android:dialogMessage="@string/pref_title_license_message"
+            android:dialogTitle="@string/pref_title_license"
+            android:summary="GPLv3"
+            android:title="@string/pref_title_license" />
+
+        <Preference
+            android:key="pref_donate_bitcoin"
+            android:summary="168utA5DWMVXLFVfQDahG5abEWUSk9Wcfm"
+            android:title="@string/pref_title_donate_bitcoin">
+        </Preference>
+
+        <Preference
+            android:summary="http://api.citybik.es/v2/"
+            android:title="@string/pref_title_citybikes_api">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://api.citybik.es/v2/" />
+        </Preference>
+
+        <Preference
+            android:summary="https://github.com/osmdroid/osmdroid"
+            android:title="@string/pref_title_osmdroid_library">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/osmdroid/osmdroid" />
+        </Preference>
+
+        <Preference
+            android:summary="https://github.com/MKergall/osmbonuspack"
+            android:title="@string/pref_title_osmbonuspack_library">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/MKergall/osmbonuspack" />
+        </Preference>
+
+        <Preference
+            android:summary="https://www.openstreetmap.org"
+            android:title="@string/pref_title_openstreetmap">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.openstreetmap.org" />
+        </Preference>
+    </PreferenceScreen>
+</PreferenceScreen>
