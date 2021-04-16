@@ -1,0 +1,249 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Neelay\\Desktop\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ms\\values-ms.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\22ce5b2a25b4b25c65d92c7a4866fbc1\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "296,370,465,557,670,798,887,1040,1157,1264,1380,1478,1579,1653,1743,1836,1940,2010,2080,2149,2222,2311,2403,2498,2594,2690,2763,2863,2956,3050,3164,3307,3399,3486,3587",
+                        "endColumns": "73,94,91,112,127,88,152,116,106,115,97,100,73,89,92,103,69,69,68,72,88,91,94,95,95,72,99,92,93,113,142,91,86,100,75",
+                        "endOffsets": "369,464,556,669,797,886,1039,1156,1263,1379,1477,1578,1652,1742,1835,1939,2009,2079,2148,2221,2310,2402,2497,2593,2689,2762,2862,2955,3049,3163,3306,3398,3485,3586,3662"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2453,2531,2630,2726,2843,2971,3064,3221,3342,3453,3573,3675,3780,3858,3952,4049,4157,4718,4792,4865,4942,5035,5131,5230,5330,5430,5507,5611,5708,5806,5924,6067,6163,6254,6359",
+                        "endColumns": "77,98,95,116,127,92,156,120,110,119,101,104,77,93,96,107,73,73,72,76,92,95,98,99,99,76,103,96,97,117,142,95,90,104,79",
+                        "endOffsets": "2526,2625,2721,2838,2966,3059,3216,3337,3448,3568,3670,3775,3853,3947,4044,4152,4226,4787,4860,4937,5030,5126,5225,5325,5425,5502,5606,5703,5801,5919,6062,6158,6249,6354,6434"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\14aa2f7dd3dd959a62918e59bc88a4f8\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "0,0",
+                        "startOffsets": "231,334",
+                        "endColumns": "102,89",
+                        "endOffsets": "333,423"
+                    },
+                    "to": {
+                        "startLines": "92,93",
+                        "startColumns": "4,4",
+                        "startOffsets": "9495,9602",
+                        "endColumns": "106,93",
+                        "endOffsets": "9597,9691"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.8.0.aar\\b011e159c566f1515395a8895485f80a\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "238",
+                        "endColumns": "102",
+                        "endOffsets": "340"
+                    },
+                    "to": {
+                        "startLines": "123",
+                        "startColumns": "4",
+                        "startOffsets": "11722",
+                        "endColumns": "106",
+                        "endOffsets": "11824"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-3.1.1.aar\\e514b2c224b4c04b12a450e5ae7aeb22\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,171",
+                        "endColumns": "63,51,48",
+                        "endOffsets": "114,166,215"
+                    },
+                    "to": {
+                        "startLines": "103,108,111",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "10450,10756,10893",
+                        "endColumns": "63,51,48",
+                        "endOffsets": "10509,10803,10937"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\78c45e6428c815ccab9d5624488ecd7d\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,166,274,397,502,610,697,801,912,990,1069,1149,1261,1370,1467,1576,1679,1786,1908,2009,2089",
+                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,79,100",
+                        "endOffsets": "161,269,392,497,605,692,796,907,985,1064,1144,1256,1365,1462,1571,1674,1781,1903,2004,2084,2185"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,101,102",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "499,610,718,841,946,1054,1141,1245,1356,1434,1513,1593,1705,1814,1911,2020,2123,2230,2352,10269,10349",
+                        "endColumns": "110,107,122,104,107,86,103,110,77,78,79,111,108,96,108,102,106,121,100,79,100",
+                        "endOffsets": "605,713,836,941,1049,1136,1240,1351,1429,1508,1588,1700,1809,1906,2015,2118,2225,2347,2448,10344,10445"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\5af7c3a0e13a19a3b48f880ab28c06f0\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "204",
+                        "endOffsets": "487"
+                    },
+                    "to": {
+                        "startLines": "80",
+                        "startColumns": "4",
+                        "startOffsets": "7643",
+                        "endColumns": "204",
+                        "endOffsets": "7843"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-11.8.0.aar\\e4b2009674a761be87407da325a521d2\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "241",
+                        "endColumns": "102",
+                        "endOffsets": "343"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "9284",
+                        "endColumns": "106",
+                        "endOffsets": "9386"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-3.1.1.aar\\4e9d692abbea673839908c51eac08c58\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,6,10,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,187,318,449,503,558,620,663,705,769,834,884,961,1073,1155,1212,1288",
+                        "endLines": "5,9,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
+                        "endColumns": "14,14,14,53,54,61,42,41,63,64,49,76,111,81,56,75,55",
+                        "endOffsets": "182,313,444,498,553,615,658,700,764,829,879,956,1068,1150,1207,1283,1339"
+                    },
+                    "to": {
+                        "startLines": "2,6,10,104,105,106,109,110,113,114,115,116,117,118,119,121,122",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,237,368,10514,10568,10623,10808,10851,11013,11077,11142,11192,11269,11381,11463,11590,11666",
+                        "endLines": "5,9,13,104,105,106,109,110,113,114,115,116,117,118,119,121,122",
+                        "endColumns": "14,14,14,53,54,61,42,41,63,64,49,76,111,81,56,75,55",
+                        "endOffsets": "232,363,494,10563,10618,10680,10846,10888,11072,11137,11187,11264,11376,11458,11515,11661,11717"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\23a84884267c4e71e5d8bbbfceffa10f\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "70",
+                        "endOffsets": "121"
+                    },
+                    "to": {
+                        "startLines": "107",
+                        "startColumns": "4",
+                        "startOffsets": "10685",
+                        "endColumns": "70",
+                        "endOffsets": "10751"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\d81fb019f60fef4ed3d93da1d98467c6\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "281,385,590,718,822,1053,1183,1329,1461,1705,1812,2018,2151,2381,2582,2675,2765",
+                        "endColumns": "103,204,127,103,230,129,145,131,243,106,205,132,229,200,92,89,107",
+                        "endOffsets": "384,589,717,821,1052,1182,1328,1460,1704,1811,2017,2150,2380,2581,2674,2764,2872"
+                    },
+                    "to": {
+                        "startLines": "72,73,74,75,76,77,78,79,81,82,83,84,85,86,87,88,89",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "6439,6547,6752,6884,6992,7223,7357,7507,7848,8092,8203,8409,8546,8776,8981,9078,9172",
+                        "endColumns": "107,204,131,107,230,133,149,135,243,110,205,136,229,204,96,93,111",
+                        "endOffsets": "6542,6747,6879,6987,7218,7352,7502,7638,8087,8198,8404,8541,8771,8976,9073,9167,9279"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.8.0.aar\\3e751de72b8526cc02ed7577ad88b89a\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "235,303,411,475,538,615,711",
+                        "endColumns": "67,107,63,62,76,95,68",
+                        "endOffsets": "302,410,474,537,614,710,779"
+                    },
+                    "to": {
+                        "startLines": "94,95,96,97,98,99,100",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9696,9768,9880,9948,10015,10096,10196",
+                        "endColumns": "71,111,67,66,80,99,72",
+                        "endOffsets": "9763,9875,9943,10010,10091,10191,10264"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-11.8.0.aar\\a3c5f4f7e59cd9381ad03bfb7c607d9f\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "0,0,0,0",
+                        "startOffsets": "286,426,565,663",
+                        "endColumns": "139,138,97,101",
+                        "endOffsets": "425,564,662,764"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4231,4371,4510,4612",
+                        "endColumns": "139,138,101,105",
+                        "endOffsets": "4366,4505,4607,4713"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-mopub-3.1.1.aar\\6936facf6e0cf74cac49196358792dfe\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,126",
+                        "endColumns": "70,69",
+                        "endOffsets": "121,191"
+                    },
+                    "to": {
+                        "startLines": "112,120",
+                        "startColumns": "4,4",
+                        "startOffsets": "10942,11520",
+                        "endColumns": "70,69",
+                        "endOffsets": "11008,11585"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-gcm-11.8.0.aar\\0933280c89992bd036e150f7b9d27b0a\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "228",
+                        "endColumns": "99",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "91",
+                        "startColumns": "4",
+                        "startOffsets": "9391",
+                        "endColumns": "103",
+                        "endOffsets": "9490"
+                    }
+                }
+            ]
+        }
+    ]
+}

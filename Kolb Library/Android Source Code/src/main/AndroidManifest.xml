@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kolblibrary.kolblibrary">
+
+    <uses-permission android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".useractivities.LoginActivity">
+
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter
+            -->
+        </activity>
+        <activity android:name=".useractivities.UserHomeScreenActivity" />
+        <activity android:name=".useractivities.CatalogSearchActivity" />
+        <activity android:name=".useractivities.CatalogSearchResult" />
+        <activity android:name=".adminactivities.NewUserActivity" />
+        <activity android:name=".useractivities.BookViewActivity" />
+        <activity android:name=".useractivities.MyCheckoutsActivity" />
+        <activity android:name=".useractivities.GetPswdActivity" />
+        <activity android:name=".adminactivities.AdminInformationActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".useractivities.TransactionConfirmationActivity" />
+        <activity android:name=".useractivities.LibraryMapActivity" />
+        <activity android:name=".adminactivities.AdminViewAllUsersActivity" />
+        <activity android:name=".adminactivities.AdminViewAllReservedBooksActivity" />
+        <activity android:name=".adminactivities.AdminViewAllChekedoutBooksActivity" />
+        <activity android:name=".useractivities.MyReservedActivity" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.github.hathibelagal.pn" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".adminactivities.CheckoutRequestActivity" />
+        <activity android:name=".adminactivities.RequestViewActivity" />
+        <activity android:name=".adminactivities.ReserveRequestActivity" />
+        <activity android:name=".adminactivities.CurrentlyCheckedOutBooksActivity" />
+        <activity android:name=".useractivities.BugActivity" />
+        <!--
+        activity
+            android:name=".FacebookActivity"
+            android:label="@string/title_activity_facebook"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FBActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity
+        -->
+        <activity android:name=".adminactivities.AllCheckoutsActivity" />
+        <activity android:name=".adminactivities.ReturnBookActivity" />
+        <activity android:name=".useractivities.ShareActivity" />
+        <activity android:name=".adminactivities.AllUsersActivity" />
+        <activity android:name=".adminactivities.EditSpecificUserActivity" />
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".useractivities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".useractivities.GoogleConfirmInformationActivity"></activity>
+    </application>
+
+</manifest>

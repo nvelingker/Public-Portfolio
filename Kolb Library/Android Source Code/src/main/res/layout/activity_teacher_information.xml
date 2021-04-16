@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Teacher Check out Information Screen Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kolblibrary.kolblibrary.useractivities.TeacherInformationActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Checkout Information"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="43dp"
+
+        tools:text="Checkout Information" />
+
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:text="Please input am amount of days (14 to 365) you plan to check out the book for:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/teacherInpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="14 to 365 days"
+        android:inputType="textPersonName|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+
+    <Button
+        android:id="@+id/AdminContBtn"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/customBeigeText"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherInpTxt" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Book Request Screen Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    android:textColor="@color/colorPrimaryDark"
+    tools:context="kolblibrary.kolblibrary.adminactivities.RequestViewActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Book Request"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Book Request" />
+
+
+    <ImageView
+        android:id="@+id/RequestImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/ReturnStatementView"
+        android:layout_width="315dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="This book is being requested by a user"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RequestImg" />
+
+    <Button
+        android:id="@+id/GoogleCreateUserBtn"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/custom_button"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Decline"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReturnStatementView" />
+
+
+    <Button
+        android:id="@+id/DeleteUserBtn"
+        android:layout_width="316dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_button"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Accept"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GoogleCreateUserBtn" />
+
+
+</android.support.constraint.ConstraintLayout>

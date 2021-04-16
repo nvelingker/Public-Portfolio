@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Change these colors to change the style -->
+
+    <!-- Page background -->
+    <!--color name="customBackground">#94E5FF</color-->
+    <color name="customBackground">#FFFFFF</color>
+    <!-- Button background -->
+    <color name="customButton1">#293E6A</color>
+
+    <!-- Layout Border background -->
+    <color name="customGray">#999999</color>
+    <color name="colorPrimary">#293E6A</color>
+
+    <!-- Text Color -->
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Button Text Color -->
+    <color name="customBeigeText">#FFFFFF</color>
+
+    <color name="colorAccent">#4c516d</color>
+
+    <!-- Colors Not used  -->
+    <color name="NavColor">#ea080b</color>
+    <color name="cardview_light_background">#FFFFFF</color>
+    <color name="customBlueText">#4C516D</color>
+
+</resources>
+
+

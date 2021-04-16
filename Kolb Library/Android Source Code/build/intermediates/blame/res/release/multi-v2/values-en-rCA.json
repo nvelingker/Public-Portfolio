@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Neelay\\Desktop\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.8.0.aar\\b011e159c566f1515395a8895485f80a\\res\\values-en-rCA\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "242",
+                        "endColumns": "99",
+                        "endOffsets": "341"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "103",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        }
+    ]
+}

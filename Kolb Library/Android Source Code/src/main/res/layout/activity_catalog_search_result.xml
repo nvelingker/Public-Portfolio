@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Catalog Search Results Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/colorPrimaryDark"
+    android:background="@color/customBackground"
+    tools:context="kolblibrary.kolblibrary.useractivities.CatalogSearchResult">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Catalog Search Results"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Catalog Search Results" />
+
+    <ListView
+        android:id="@+id/searchView"
+        android:layout_width="361dp"
+        android:layout_height="422dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:dividerHeight="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+</android.support.constraint.ConstraintLayout>

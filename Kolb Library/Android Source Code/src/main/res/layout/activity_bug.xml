@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Displays Bug Activity Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    tools:context="kolblibrary.kolblibrary.useractivities.BugActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Report A Bug"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Report A Bug" />
+
+
+    <EditText
+        android:id="@+id/bugMessage"
+        android:layout_width="329dp"
+        android:layout_height="268dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Please provide us with information regarding the bug you found"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteY="114dp" />
+
+
+    <Button
+        android:id="@+id/BTN_submitBug"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_button"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="Submit Bug Report"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bugMessage" />
+
+
+</android.support.constraint.ConstraintLayout>

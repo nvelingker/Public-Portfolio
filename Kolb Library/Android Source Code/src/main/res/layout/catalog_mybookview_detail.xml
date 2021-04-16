@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Content portion of the Book View Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/customBackground"
+    >
+
+
+    <ImageView
+        android:id="@+id/bookImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Title"/>
+
+        <TextView
+            android:id="@+id/Author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Author" />
+
+        <TextView
+            android:id="@+id/DateChkdOutView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Date Checked Out" />
+        <TextView
+            android:id="@+id/DaysLeftView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="# of days left" />
+    </LinearLayout>
+</LinearLayout>

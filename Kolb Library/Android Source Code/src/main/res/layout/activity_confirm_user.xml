@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates User Confirmation Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    android:textColor="@color/colorPrimaryDark"
+    tools:context="kolblibrary.kolblibrary.adminactivities.NewUserActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Confirm Your Information"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Please enter your legal information:" />
+
+    <Button
+        android:id="@+id/GoogleCreateUserBtn"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="204dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="continue"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/FirstNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/LastNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/GoogleCreateUserBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstNameEditText"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+</android.support.constraint.ConstraintLayout>

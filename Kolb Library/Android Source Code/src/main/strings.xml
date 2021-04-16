@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">KolbLibrary</string>
+    <string name="network_unavailable">The network is unavailable. Please try again later.</string>
+    <string name="credentials_timeout">The network timed out. Please try again later.</string>
+    <string name="credentials_denied">Your credentials could not be verified. Please try again.</string>
+    <string name="credentials_weird">An unknown error has occurred.</string>
+    <string name="reserve_button_reserve">Reserve Book</string>
+    <string name="reserve_button_unreserve">Cancel Reservation</string>
+    <string name="reserve_button_waitlist">Join Waitlist</string>
+    <string name="reserve_failure_unavailable">This book is not available for reservation.</string>
+    <string name="reserve_failure_holding">You have already reserved this book.</string>
+    <string name="reserve_failure_unknown">An unknown error has occurred.</string>
+    <string name="reserve_success">You have successfully reserved %1$s.</string>
+    <string name="checkout_button_checkout">Checkout Book</string>
+
+    <string name="blank_search">Please enter a search query.</string>
+    <string name="warning_overdue">Warning: this book is overdue. Get it back, scrub.</string>
+</resources>

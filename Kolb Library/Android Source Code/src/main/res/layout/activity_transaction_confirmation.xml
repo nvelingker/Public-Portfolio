@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Transction Confirmation Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    tools:context="kolblibrary.kolblibrary.useractivities.TransactionConfirmationActivity">
+
+    <ImageView
+        android:id="@+id/TransactionImg"
+        android:layout_width="137dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionDetailMsg"
+        app:srcCompat="@drawable/ic_check_circle_black_48dp" />
+
+    <TextView
+        android:id="@+id/TransactionMsg"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TransactionTitleView"
+        android:layout_width="36dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Title: "
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionImg" />
+
+    <TextView
+        android:id="@+id/TransactionAuthorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Author: "
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionTitleView" />
+
+    <TextView
+        android:id="@+id/TransactionISBNView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="ISBN: "
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionAuthorView" />
+
+    <Button
+        android:id="@+id/TransactionFinishBtn"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionISBNView" />
+
+
+    <!--Button
+        android:id="@+id/TransactionFinishBtn"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/customBeigeText"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:layout_width="2342dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionISBNView"
+        app:layout_constraintVertical_bias="0.237" /-->
+
+    <TextView
+        android:id="@+id/TransactionDetailMsg"
+        android:layout_width="266dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionMsg" />
+
+    <Button
+        android:id="@+id/TransactionShareBtn"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Share via Twitter"
+        android:textAllCaps="false"
+        android:textColor="@color/customBeigeText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionFinishBtn" />
+</android.support.constraint.ConstraintLayout>

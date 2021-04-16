@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\dipti\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dipti\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\e3d4ea8c6df7e0a76acc759d38674d15\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

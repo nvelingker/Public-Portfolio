@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Book View Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BookScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    android:textColor="@color/colorPrimaryDark"
+    tools:context="kolblibrary.kolblibrary.BookViewActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/largeImageCover"
+            android:layout_width="87dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+
+        <LinearLayout
+            android:id="@+id/WarningLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/largeImageCover">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/stat_sys_warning" />
+
+            <TextView
+                android:id="@+id/warningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="@string/warning_overdue"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Title"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WarningLayout" />
+
+        <TextView
+            android:id="@+id/AuthorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Author"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TitleView" />
+
+        <TextView
+            android:id="@+id/SummaryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Summary"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AuthorView" />
+
+        <TextView
+            android:id="@+id/AvailabilityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Status"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SummaryView" />
+
+
+        <TextView
+            android:id="@+id/SubjectView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Subject"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AvailabilityView" />
+
+        <TextView
+            android:id="@+id/PublisherView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Publisher"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SubjectView" />
+
+        <TextView
+            android:id="@+id/YearView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Year"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PublisherView" />
+
+        <TextView
+            android:id="@+id/ISBNView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="ISBN"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/YearView" />
+
+
+        <Button
+            android:id="@+id/CheckOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="4dp"
+            android:paddingTop="8dp"
+            android:text="Check Out"
+            android:textAllCaps="false"
+            android:textColor="@color/customBeigeText"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/ISBNView" />
+
+        <Button
+            android:id="@+id/reserveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="Reserve"
+            android:textAllCaps="false"
+            android:textColor="@color/customBeigeText"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CheckOutBtn" />
+
+        <Button
+            android:id="@+id/BookViewShareBtn"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="share via twitter"
+            android:textAllCaps="false"
+            android:textColor="@color/customBeigeText"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reserveBtn" />
+
+        <!--TextView
+            android:id="@+id/SummaryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Summary"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BookViewShareBtn" /-->
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

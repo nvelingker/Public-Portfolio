@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Library Map Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/customBackground"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="kolblibrary.kolblibrary.useractivities.LibraryMapActivity"
+tools:showIn="@layout/activity_library_map">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Library Map"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Library Map"
+        />
+
+    <TextView
+        android:id="@+id/textPinchToZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Pinch-to-Zoom "
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"/>
+
+    <kolblibrary.kolblibrary.objects.TouchImageView
+        android:id="@+id/imageView"
+        android:paddingTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/library_map"
+        app:layout_constraintTop_toBottomOf="@+id/textPinchToZoom"/>
+
+
+</android.support.constraint.ConstraintLayout>

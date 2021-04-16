@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Description: Creates Login Screen-->
+<!-- Authors: Chris Seiler, Tejas Priyadarshi, Neelay Velingker -->
+<!-- Version: 1.0 -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBackground"
+    tools:context="kolblibrary.kolblibrary.useractivities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="113dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/customBackground"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+
+    <LinearLayout
+        android:id="@+id/llLinearLayout"
+        android:layout_width="318dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorTextView">
+
+        <EditText
+            android:id="@+id/usernameInpTxt"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/errorTextView" />
+
+        <EditText
+            android:id="@+id/passwordInpTxt"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameInpTxt" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="244dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/customBeigeText"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveLoginCheckBox" />
+
+
+        <CheckBox
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:checked="false"
+            android:duplicateParentState="false"
+            android:fontFamily="@font/poppins_medium"
+            android:text="save login"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInpTxt" />
+
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:id="@+id/llGoogle"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_border"
+        android:foregroundTintMode="src_over"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llLinearLayout"-->
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="241dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:height="30dp"
+        android:background="@drawable/google_signin2"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llLinearLayout" />
+
+
+    <!--/LinearLayout-->
+
+    <!--com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="257dp" /-->
+
+</android.support.constraint.ConstraintLayout>

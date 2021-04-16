@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Kolb Library</string>
+    <string name="welcome">Welcome to Kolb Library</string>
+    <string name="network_unavailable">The network is unavailable. Please try again later.</string>
+    <string name="credentials_timeout">The network timed out. Please try again later.</string>
+    <string name="credentials_denied">Your credentials could not be verified. Please try again.</string>
+    <string name="credentials_weird">An unknown error has occurred.</string>
+    <string name="reserve_button_reserve">Reserve Book</string>
+    <string name="reserve_button_unreserve">Cancel Reservation</string>
+    <string name="reserve_button_waitlist">Join Waitlist</string>
+    <string name="checkout_button_checkout">Checkout Book</string>
+    <string name="unreserve_failure_unknown">An unknown error has occurred.</string>
+    <string name="unreserve_success">You have successfully canceled your reservation for %1$s.</string>
+    <string name="reserve_success">You have successfully reserved %1$s.</string>
+    <string name="reserve_failure_unavailable">This book is not available for reservation.</string>
+    <string name="reserve_failure_holding">You have already reserved this book.</string>
+    <string name="reserve_failure_unknown">An unknown error has occurred.</string>
+
+    <string name="blank_search">Please enter a search query.</string>
+    <string name="search_loading">Loading&#8230;</string>
+    <string name="search_loading_body">Please wait a moment&#8230;</string>
+    <string name="search_images">Loading image %1$s of %2$s&#8230;</string>
+    <string name="warning_overdue">Warning: this book is overdue. Please return it as soon as possible.</string>
+    <string name="title_activity_library_map">LibraryMapActivity</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_x">xActivity</string>
+
+    <string name="create_user_success">You have successfully created user %1$s.</string>
+    <string name="create_user_fail">Could not create user. Please try another username.</string>
+    <string name="delete_user_success">You have successfully deleted user %1$s.</string>
+    <string name="delete_user_fail">Could not delete user. Does the user still exist?</string>
+
+    <string name="transaction_checkout_title">Your checkout is being processed!</string>
+    <string name="transaction_checkout_detail">You will receive a notification when a librarian has authorized your checkout request to take the book off premises.</string>
+    <string name="transaction_reservation_title">Your reservation has been placed!</string>
+    <string name="transaction_reservation_detail">You will recieve a notification when your book is ready for pickup.</string>
+    <string name="facebook_app_id">723091024548865</string>
+    <string name="fb_login_protocol_scheme">fb723091024548865</string>
+
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">2BSAKffb6c4uPp3wlORKyBrtR</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">93zU8KHyrCWDGthFIVsVBtFDIVJWvQ4gZjYbnRWilJ70pNg9OW</string>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=AF:06:B0:A7:4A:35:3A:32:9A:53:61:5E:1E:EC:AD:94:8E:38:75:8B%3Bkolblibrary.kolblibrary
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    AF:06:B0:A7:4A:35:3A:32:9A:53:61:5E:1E:EC:AD:94:8E:38:75:8B
+
+    SHA-1 certificate fingerprint:
+    AF:06:B0:A7:4A:35:3A:32:9A:53:61:5E:1E:EC:AD:94:8E:38:75:8B
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+</resources>

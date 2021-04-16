@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Neelay\\Desktop\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Neelay\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-3.1.1.aar\\23a84884267c4e71e5d8bbbfceffa10f\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531593009198",
+    "project_id": "kolblibrary"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531593009198:android:0feb29f88e81ccf9",
+        "android_client_info": {
+          "package_name": "kolblibrary.kolblibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531593009198-sf4nrnj2o467rsp821tsl3c9e88th8ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB2irBLWfeVdH8ua0x7PYHka3JQC8mxVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
