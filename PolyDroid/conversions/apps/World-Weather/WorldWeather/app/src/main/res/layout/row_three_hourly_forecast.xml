@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/background_alternate_even"
+              android:baselineAligned="false"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/forecast_hour_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_linear_dark_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temperature_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:drawableLeft="@drawable/ic_action_temperature"
+                android:drawableStart="@drawable/ic_action_temperature"
+                android:gravity="start"
+                android:paddingLeft="@dimen/padding_very_large"
+                android:paddingRight="@dimen/padding_very_large"
+                android:textSize="@dimen/text_size_very_large"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_medium">
+                <!--V1 Comment below-->
+                <ImageView
+                    android:id="@+id/weather_conditions_image_view"
+                    android:layout_width="@dimen/icon_dimension_horizontal"
+                    android:layout_height="@dimen/icon_dimension_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/gap_large"
+                    android:layout_marginLeft="@dimen/gap_large"
+                    android:layout_marginRight="@dimen/gap_large"
+                    android:layout_marginStart="@dimen/gap_large"
+                    android:contentDescription="@string/icon_content_description_weather_conditions"
+                    android:padding="0dp"/>
+
+                <TextView
+                    android:id="@+id/weather_conditions_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_small"
+            android:layout_marginTop="@dimen/gap_small"
+            android:background="?attr/themed_gradient_drawable"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/atmospheric_pressure_text_view"
+                    style="@style/TextView.SmallText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/humidity_text_view"
+                    style="@style/TextView.SmallText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_small">
+
+                <!--V2 COMMENT BELOW-->
+                <ImageView
+                    android:layout_width="@dimen/icon_dimension_horizontal"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/icon_content_description_wind"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wind"/>
+
+                <TextView
+                    android:id="@+id/wind_text_view"
+                    style="@style/TextView.SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="start"
+                    android:paddingLeft="0dp"
+                    android:paddingStart="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

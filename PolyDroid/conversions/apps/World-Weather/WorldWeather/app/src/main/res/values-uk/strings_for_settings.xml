@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="pref_temperature_scale_celsius">Цельсій (℃)</string>
+    <string name="pref_temperature_scale_fahrenheit">Фаренгейт (℉)</string>
+
+    <string name="pref_temperature_scale_title">Температурна шкала</string>
+
+    <string name="pref_wind_speed_unit_bs">Шкала Бофорта (сила вітру)</string>
+
+    <string name="pref_wind_speed_unit_title">Одиниці вимірювання швидкості вітру</string>
+
+    <string name="pref_data_cache_period_10">10 хвилин</string>
+    <string name="pref_data_cache_period_20">20 хвилин</string>
+    <string name="pref_data_cache_period_30">30 хвилин</string>
+    <string name="pref_data_cache_period_60">1 година</string>
+    <string name="pref_data_cache_period_120">2 години</string>
+
+    <string name="pref_app_theme_pink">Рожевий</string>
+    <string name="pref_app_theme_red">Червоний</string>
+    <string name="pref_app_theme_purple">Фіолетовий</string>
+    <string name="pref_app_theme_indigo">індиго</string>
+    <string name="pref_app_theme_blue">Синій</string>
+    <string name="pref_app_theme_green">Зелений</string>
+    <string name="pref_app_theme_brown">Коричневий</string>
+    <string name="pref_app_theme_title">Тема додатку</string>
+
+    <string name="pref_city_removal_mode_title">Видалення міст</string>
+
+    <string name="pref_language_summary">Виберіть мову додатка</string>
+    <string name="pref_language_title">Мова</string>
+
+    <string name="pref_personal_api_key_title">Персональний ключ API</string>
+
+<string name="pref_temperature_scale_summary">Виберіть шкалу температури</string>
+    <string name="pref_app_theme_summary">Виберіть тему додатка</string>
+    <string name="pref_forecast_display_mode_list">Як список</string>
+
+    <string name="pref_personal_api_key_summary">Виберіть, щоб використовувати власний ключ API</string>
+    <string name="pref_wind_speed_unit_mps">Метрів у секунду (м/с)</string>
+    <string name="pref_app_theme_cyan">Бірюзовий</string>
+    <string name="pref_app_theme_teal">Синьо-зелений</string>
+    <string name="pref_app_theme_blue_gray">Синьо-сірий</string>
+
+    <string name="pref_forecast_display_mode_summary">Виберіть, як буде відображатися прогноз трьох-годинної погоди</string>
+    <string name="pref_forecast_display_mode_title">Режим відображення прогнозу погоди за три години</string>
+
+    <string name="pref_city_removal_mode_summary">Виберіть, як міста будуть вилучатися зі списку на екрані керування міст</string>
+    <string name="pref_wind_speed_unit_summary">Виберіть одиниці вимірювання швидкості вітру</string>
+    <string name="pref_data_cache_period_summary">З міркувань ефективності найновіші дані про погоду зберігаються локально та повторно використовуються протягом короткого проміжку часу. Тут ви можете вказати період часу, після якого дані будуть оновлюватися через мережу.</string>
+    <string name="pref_data_cache_period_title">Період повторного використання погодних даних</string>
+
+    <string name="pref_app_theme_deep_purple">Глибокий фіолетовий</string>
+    <string name="pref_wind_speed_unit_kph">Кілометрів на годину (км/год)</string>
+    <string name="pref_wind_speed_unit_mph">Миль на годину (миль/год)</string>
+    <string name="pref_wind_direction_display_summary">Оберіть, щоб включити напрям вітру в інформацію про погоду</string>
+    <string name="pref_wind_direction_display_title">Відображення напрямку вітру</string>
+
+    <string name="pref_forecast_display_mode_swipe">Як горизонтально прокручуваний</string>
+    <string name="pref_city_removal_mode_button">Натискання кнопки та перегляд діалогу підтвердження</string>
+    <string name="pref_city_removal_mode_swipe">Змахування вліво чи вправо</string>
+
+    </resources>

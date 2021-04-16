@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:weather="http://schemas.android.com/apk/res/com.haringeymobile.ukweather">
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_temperature_scale_id_default"
+        android:entries="@array/pref_temperature_scale_titles"
+        android:entryValues="@array/pref_temperature_scale_values"
+        android:key="temperature_scale"
+        android:summary="@string/pref_temperature_scale_summary"
+        android:title="@string/pref_temperature_scale_title"/>
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_wind_speed_unit_id_default"
+        android:entries="@array/pref_wind_speed_unit_titles"
+        android:entryValues="@array/pref_wind_speed_unit_id_values"
+        android:key="wind_speed_measurement_unit"
+        android:summary="@string/pref_wind_speed_unit_summary"
+        android:title="@string/pref_wind_speed_unit_title"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="wind_direction_display"
+        android:summary="@string/pref_wind_direction_display_summary"
+        android:title="@string/pref_wind_direction_display_title"/>
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_data_cache_period_default"
+        android:entries="@array/pref_data_cache_period_titles"
+        android:entryValues="@array/pref_data_cache_period_values"
+        android:key="data_cache_period"
+        android:summary="@string/pref_data_cache_period_summary"
+        android:title="@string/pref_data_cache_period_title"/>
+
+    <com.haringeymobile.ukweather.settings.AppThemeListPreference
+        android:defaultValue="@string/pref_app_theme_default"
+        android:entries="@array/pref_theme_names"
+        android:entryValues="@array/pref_theme_values"
+        android:key="app_theme"
+        android:summary="@string/pref_app_theme_summary"
+        android:title="@string/pref_app_theme_title"
+        weather:entryColors="@array/pref_color_values"/>
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_forecast_display_mode_id_default"
+        android:entries="@array/pref_forecast_display_mode_titles"
+        android:entryValues="@array/pref_forecast_display_mode_values"
+        android:key="forecast_display_mode"
+        android:summary="@string/pref_forecast_display_mode_summary"
+        android:title="@string/pref_forecast_display_mode_title"/>
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_city_removal_mode_id_default"
+        android:entries="@array/pref_city_removal_mode_titles"
+        android:entryValues="@array/pref_city_removal_mode_values"
+        android:key="city_removal_mode"
+        android:summary="@string/pref_city_removal_mode_summary"
+        android:title="@string/pref_city_removal_mode_title"/>
+
+    <com.haringeymobile.ukweather.settings.CustomListPreference
+        android:defaultValue="@string/pref_app_language_default"
+        android:entries="@array/app_languages"
+        android:entryValues="@array/pref_languages_values"
+        android:key="app_language"
+        android:summary="@string/pref_language_summary"
+        android:title="@string/pref_language_title"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="personal_api_key"
+        android:summary="@string/pref_personal_api_key_summary"
+        android:title="@string/pref_personal_api_key_title"/>
+
+</PreferenceScreen>
