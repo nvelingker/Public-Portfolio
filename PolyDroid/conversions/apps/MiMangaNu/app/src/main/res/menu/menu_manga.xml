@@ -1,0 +1,65 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ar.rulosoft.mimanganu.ActivityCapitulos">
+    <item
+        android:id="@+id/action_config_reader"
+        android:icon="@drawable/ic_action_config_reader"
+        android:title="@string/configuraciones"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_view_download"
+        android:icon="@drawable/ic_download_white_vd"
+        android:title="@string/descargas"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/sort_chapters"
+        android:icon="@drawable/ic_order_vd"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_number"
+                    android:title="@string/sort_number" />
+                <item
+                    android:id="@+id/sort_number_asc"
+                    android:title="@string/sort_number_asc" />
+                <item
+                    android:id="@+id/sort_title"
+                    android:title="@string/sort_title" />
+                <item
+                    android:id="@+id/sort_title_asc"
+                    android:title="@string/sort_title_desc" />
+                <item
+                    android:id="@+id/sort_as_added_to_db_asc_chapters"
+                    android:title="@string/sort_as_added_to_db_asc" />
+                <item
+                    android:id="@+id/sort_as_added_to_db_desc_chapters"
+                    android:title="@string/sort_as_added_to_db_desc" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_download_remaining"
+        android:title="@string/descargarestantes" />
+    <item
+        android:id="@+id/action_download_unread"
+        android:title="@string/descarga_no_leidos" />
+    <item
+        android:id="@+id/mark_all_as_unread"
+        android:title="@string/macartodonoleido" />
+    <item
+        android:id="@+id/mark_all_as_read"
+        android:title="@string/macartodoleido" />
+    <item
+        android:id="@+id/action_hide_read"
+        android:checkable="true"
+        android:title="@string/hide_read" />
+    <item
+        android:id="@+id/delete"
+        android:title="@string/borrar" />
+</menu>
+

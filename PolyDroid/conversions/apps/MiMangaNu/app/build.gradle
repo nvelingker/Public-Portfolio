@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "ar.rulosoft.mimanganu"
+        versionCode 91
+        versionName "1.91"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion 15
+    }
+    signingConfigs {
+        release {
+            storeFile file("../mimanganu.jks")
+            storePassword 'mimanganu'
+            keyAlias 'mimanganu'
+            keyPassword 'mimanganu'
+        }
+        debug {
+            storeFile file("../mimanganu.jks")
+            storePassword 'mimanganu'
+            keyAlias 'mimanganu'
+            keyPassword 'mimanganu'
+        }
+    }
+    buildTypes {
+        release {
+            lintOptions {
+                disable 'MissingTranslation'
+                disable 'NewApi' //Avoid problems in Android Studio 2.4 preview 6
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions.encoding = 'UTF-8'
+    flavorDimensions "builds"
+    productFlavors {
+        fdroid {
+            signingConfig signingConfigs.release
+            versionNameSuffix '-fdroid'
+            dimension "builds"
+        }
+        github {
+            signingConfig signingConfigs.release
+             //removed to maintain updates as now are
+            dimension "builds"
+        }
+    }
+}
+
+android.sourceSets {
+    test {
+        java.srcDirs += "$projectDir/src/testShare"
+    }
+
+    androidTest {
+        java.srcDirs += "$projectDir/src/testShare"
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:25.3.1'
+}
+
+dependencies {
+    final ANDROID_SUPPORT = '28.0.0'
+    implementation "com.android.support:support-v4:$ANDROID_SUPPORT"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:design:$ANDROID_SUPPORT"
+    implementation "com.android.support:appcompat-v7:$ANDROID_SUPPORT"
+    implementation "com.android.support:recyclerview-v7:$ANDROID_SUPPORT"
+    implementation "com.android.support:preference-v7:$ANDROID_SUPPORT"
+    api project(':imageviewtouchlibrary')
+    implementation 'rapid.decoder:library:0.3.0'
+    implementation 'rapid.decoder:jpeg-decoder:0.3.0'
+    implementation 'rapid.decoder:png-decoder:0.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1' //on 3.10.0 are deprecated some ciphers
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation 'com.squareup.duktape:duktape-android:1.1.0'/* v 1.2.0 need 4+mb extra*/
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    implementation 'com.evernote:android-job:1.2.5'
+    githubImplementation 'com.google.android.gms:play-services-base:11.0.0'
+    implementation 'ch.acra:acra:4.9.2'
+    fdroidApi project(':fakegps')
+    // for device-based testing
+    androidTestImplementation "com.android.support:support-annotations:$ANDROID_SUPPORT"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'junit:junit:4.12'
+    // for host-based testing
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.robolectric:robolectric:4.0-beta-1'
+
+    android {
+        testOptions {
+            unitTests {
+                includeAndroidResources = true
+            }
+        }
+    }
+}
