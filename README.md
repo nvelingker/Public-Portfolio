@@ -12,3 +12,6 @@ In this repository, you will find the original source code of both of these proj
 In **PolyDroid**, you will find the source code of all of our 200+ candidate configurations.  You will also find the machine learning source code written by [Brian Heath](http://brianheath.info/) that was used in conducting our study.
 
 In **Kolb Library**, you will find the source code for our Android app and EC2 server.  You will also find supporting documentation on how to open the code as well as how we planned development.
+
+### Private Projects
+To see some of my private projects, please email me at nvelingker@gmail.com
